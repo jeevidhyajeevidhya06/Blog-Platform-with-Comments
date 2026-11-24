@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BlogSpace | Blog Platform</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="brand" href="/">✦ BlogSpace</a><nav><span id="welcome"></span><button id="loginBtn" class="light">Login</button><button id="registerBtn">Register</button><button id="logoutBtn" class="light hidden">Logout</button></nav></header>
+<main>
+<section class="hero"><div><p class="eyebrow">YOUR IDEAS, YOUR SPACE</p><h1>Stories worth<br><em>sharing.</em></h1><p class="sub">Write, publish, and join conversations with a community of curious minds.</p></div><div class="art">✍<b>✦</b></div></section>
+<section id="authPanel" class="panel hidden"><h2 id="authTitle">Welcome back</h2><form id="authForm"><input id="authName" placeholder="Your name"><input id="authEmail" type="email" placeholder="Email address" required><input id="authPassword" type="password" placeholder="Password (min. 6 characters)" required><button id="authSubmit">Login</button><p id="authMessage" class="message"></p></form></section>
+<section class="stories"><div class="heading"><div><p class="eyebrow">THE COMMUNITY</p><h2>Latest stories</h2></div><button id="writeBtn">＋ Write a post</button></div>
+<form id="postForm" class="panel hidden"><h3 id="postFormTitle">Create a post</h3><input id="postTitle" placeholder="Story title" required maxlength="150"><textarea id="postContent" placeholder="Share your thoughts..." rows="5" required></textarea><button type="submit">Publish post</button> <button type="button" id="cancelPost" class="light">Cancel</button><p id="postMessage" class="message"></p></form>
+<div id="posts" class="posts"></div><p id="emptyState" class="empty hidden">No posts yet. Be the first to share a story!</p></section>
+</main><footer>Made for sharing ideas <em>✦</em></footer><script src="app.js"></script>
+</body></html>
